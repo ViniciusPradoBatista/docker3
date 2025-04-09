@@ -1,0 +1,6 @@
+FROM ubuntu
+
+RUN apt update -y
+RUN apt-get install -y mysql-server
+RUN service mysql start
+CMD [ "service", "mysql", "start" ]
